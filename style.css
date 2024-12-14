@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -12,11 +12,11 @@ body {
   text-align: right;
 }
 
-.header img {
+.header__image {
   width: 100%;
 }
 
-.header .header__title {
+.header__title {
   font-family: fantasy, cursive;
 }
 
@@ -43,22 +43,23 @@ body {
   display: flex;
 }
 
-ul {
+.section__list {
   margin: 0;
   padding: 0px;
 }
 
-li, 
-h3 {
+.section__list-item, 
+.section__title {
   list-style: none;
 }
 
-input,
-button{
+.section__checkbox,
+.section__input,
+.section__button {
   outline: none;
 }
 
-button {
+.section__button {
   background: none;
   border: 0px;
   color: #888;
@@ -68,7 +69,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.section__button:hover {
   color: #3a3A3a;
 }
 
@@ -162,11 +163,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.section__list-item_edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.section__list-item_edit label {
   display: none;
 }
