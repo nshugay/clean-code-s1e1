@@ -13,10 +13,10 @@
   <div class="main">
     <h1 class="main__title" id="main__title">TODO List</h1>
     <section class="section" id="section">
-      <label for="section__input">Add Item</label>
+      <label class="section__title main__label" for="section__input">Add Item</label>
       <div class="section__wrapper">
-        <input id="section__input" class="section__input" type="text">
-        <button class="section__button">Add</button>
+        <input id="section__input" class="section__input section__input_add" type="text">
+        <button class="section__button section__button_add">Add</button>
       </div>
     </section>
     <section class="section" id="section">
@@ -44,7 +44,7 @@
     </section>
     <section class="section" id="section">
       <h3 class="section__title">Completed</h3>
-      <ul class="section__list" id="completed-tasks">
+      <ul class="section__list section__list_completed" id="completed-tasks">
         <li class="section__list-item">
           <input class="section__checkbox" type="checkbox" checked>
           <label class="section__label">See the Doctor</label>
